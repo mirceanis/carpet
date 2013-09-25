@@ -1,0 +1,19 @@
+{
+  "name": "carpet",
+  "description": "log log log",
+  "version": "0.0.1",
+  "author": "Mircea Nistor <mirceanis@gmail.com>",
+  "contributors": [ 
+  ],
+  "keywords": [ "log", "logging" ],
+  "main": "./lib/carpet.js",
+  "repository": {
+    "type": "mercurial",
+    "url": "https://bitbucket.org/mirceanis/carpet",
+    "web" : "https://bitbucket.org/mirceanis/carpet"
+  },
+  "engines": { "node": ">= 0.8.0" },
+  "dependencies": {
+    "colors" : "*"
+  }
+}
