@@ -41,6 +41,10 @@ Written and maintained by [Mircea Nistor][1].
 
 ## Changelog
 
+0.0.5
+
+	- bugfixes
+
 0.0.4
 	
 	- log() is now equivalent to log.d()
