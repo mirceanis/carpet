@@ -1,0 +1,8 @@
+syntax: glob
+node_modules/colors/*
+.hgignore
+.hg/*
+*.orig
+*~
+npm-debug.log
+logo.png
