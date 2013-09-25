@@ -44,11 +44,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Changelog
 
-0.0.1:
-
-  - Initial release
+0.0.3
+	
+	- nothing so far
 
 0.0.2
 
 	- shorter member function names
 	- can also be called directly, equivalent to log.info()
+
+0.0.1:
+
+  - Initial release
+
+
