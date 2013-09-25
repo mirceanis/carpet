@@ -21,6 +21,17 @@ Calls are forwarded to console.log so everything goes to stdout
     
     log("calling it short"); //equivalent to log.i
     
+Also accepts multiple arguments
+
+		var log = require('carpet');
+		
+    log("loook ma' %s formatted output !!!%doneoneeleven", "this is", 1);
+
+
+## TODO
+
+Log levels only change color but it might be necessary to limit log output so..
+
     //TODO: log.setLevel("debug" /../ "error");
     //TODO: load log level from environment variable
 
