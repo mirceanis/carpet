@@ -13,4 +13,7 @@ log.log("next one is empty");
 log.log();
 log.log("objects: ", {a : 2, b : ['a', 's', undefined, 'f'], c : { b : { a : 2}}});
 
+log("calling it short");
+log.w("calling a warning");
+
 
