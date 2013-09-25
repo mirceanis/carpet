@@ -1,2 +1,5 @@
 syntax: glob
 node_modules/colors/*
+*.orig
+*~
+npm-debug.log
