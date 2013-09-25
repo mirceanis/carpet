@@ -1,19 +1,33 @@
 {
   "name": "carpet",
-  "description": "log log log",
-  "version": "0.0.3",
-  "author": "Mircea Nistor <mirceanis@gmail.com>",
-  "contributors": [ 
+  "description": "nodejs logger with timestamps and colors",
+  "version": "0.0.4",
+  "keywords": [
+    "log",
+    "logging"
   ],
-  "keywords": [ "log", "logging" ],
-  "main": "./lib/carpet.js",
-  "repository": {
-    "type": "hg",
-    "url": "https://bitbucket.org/mirceanis/carpet",
-    "web" : "https://bitbucket.org/mirceanis/carpet"
+  "maintainers": [
+    {
+      "name": "Mircea Nistor",
+      "email": "mirceanis@gmail.com",
+      "web": ""
+    }
+  ],
+  "dependencies": {
+    "colors": "*"
   },
   "engines": { "node": ">= 0.8.0" },
-  "dependencies": {
-    "colors" : "*"
-  }
+  "repositories": [
+    {
+      "type": "mercurial",
+      "url": "https://bitbucket.org/mirceanis/carpet"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "homepage": "https://bitbucket.org/mirceanis/carpet"
 }
