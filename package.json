@@ -8,7 +8,7 @@
   "keywords": [ "log", "logging" ],
   "main": "./lib/carpet.js",
   "repository": {
-    "type": "mercurial",
+    "type": "hg",
     "url": "https://bitbucket.org/mirceanis/carpet",
     "web" : "https://bitbucket.org/mirceanis/carpet"
   },
