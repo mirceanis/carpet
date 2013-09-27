@@ -1,6 +1,6 @@
 carpet
 ========
-A very simple nodejs logger with timestamps and colors
+A very simple nodejs logger with colorful timestamps and logging level
 
 ## Installation
 
@@ -14,15 +14,21 @@ Via [npm][1]:
 
     var log = require("carpet");
     
+    log("hello world");
+    
+    // will output
+    // 2013-09-27 13:45:12.963 hello world
+
+### More colors
+
+You get different colors for timestamps according to level
+    
     log.d("debug"); // green timestamps .. equivalent to log.debug()
     log.i("info");	// white timestamps .. equivalent to log.info()
     log.w("warn");	// yellow timestamps .. equivalent to log.warn()
     log.e("error");	// red timestamps .. equivalent to log.error() or log.err()
 
-You can also call it without specifying level:
-
-    log("calling it short"); //equivalent to log.d
-
+### 'console.log' replacement
 
 Calls are forwarded to `console.log` so everything goes to `stdout`    
 Also the log behaves just like `console.log`:
@@ -58,13 +64,26 @@ by calling `log.setLevel("default")`
 
 If that variable is not set, the default default is equivalent to `setLevel("everything")`
 
+#### Verbosity levels
+	
+	* All. every level is printed
+		`log.setLevel ( 0 / "debug" / "d" / "verbose" / "all" / "everything" )`
+	* Info and above
+		`log.setLevel ( 1 / "info" / "i" )`
+	* Warnings and errors
+		`log.setLevel ( 2 / "warn" / "w" )`
+	* Just errors
+		`log.setLevel ( 3 / "err" / "e" / "error")`
+	* Nothing
+		`log.setLevel ( 4 / "nothing" / -1)`
+		
 ## TODO
 
     //TODO: buffer log calls before writing to file
 
 ## Credits
 
-Written and maintained by [Mircea Nistor][1].
+Written and maintained by [Mircea Nistor][2].
 
 ## Changelog
 
@@ -94,5 +113,5 @@ Written and maintained by [Mircea Nistor][1].
 
   - Initial release
 
-
-[1]: mailto:mirceanis@gmail.com
+[1]: http://npmjs.org
+[2]: mailto:mirceanis@gmail.com
