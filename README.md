@@ -22,13 +22,13 @@ Hello world example
 ### More colors
 
 You get different colors for timestamps according to level
-    
-  log.d("debug"); // green timestamps .. equivalent to log.debug()
-  log.i("info");	// white timestamps .. equivalent to log.info()
-  log.w("warn");	// yellow timestamps .. equivalent to log.warn()
-  log.e("error");	// red timestamps .. equivalent to log.error() or log.err()
 
-### `console.log` replacement
+	log.d("debug"); // green timestamps .. equivalent to log.debug()
+	log.i("info");	// white timestamps .. equivalent to log.info()
+	log.w("warn");	// yellow timestamps .. equivalent to log.warn()
+	log.e("error");	// red timestamps .. equivalent to log.error() or log.err()
+
+### Replacement for `console.log`
 
 Calls are forwarded to `console.log` so everything goes to `stdout`    
 Also the log behaves just like `console.log`:
