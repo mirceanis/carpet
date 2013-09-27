@@ -12,12 +12,12 @@ Via [npm][1]:
 
 ### Simple
 
-  var log = require("carpet");
-  
-  log("hello world");
-  
-  // will output
-  // 2013-09-27 13:45:12.963 hello world
+Hello world example
+
+	var log = require("carpet");
+	log("hello world");
+	// will output
+	// 2013-09-27 13:45:12.963 hello world
 
 ### More colors
 
@@ -67,15 +67,15 @@ If that variable is not set, the default default is equivalent to `setLevel("eve
 #### Verbosity levels
 	
 * All. every level is printed
-	`log.setLevel ( 0 / "debug" / "d" / "verbose" / "all" / "everything" )`
+	*	`log.setLevel ( 0 / "debug" / "d" / "verbose" / "all" / "everything" )`
 * Info and above
-	`log.setLevel ( 1 / "info" / "i" )`
+	* `log.setLevel ( 1 / "info" / "i" )`
 * Warnings and errors
-	`log.setLevel ( 2 / "warn" / "w" )`
+	* `log.setLevel ( 2 / "warn" / "w" )`
 * Just errors
-	`log.setLevel ( 3 / "err" / "e" / "error")`
+	* `log.setLevel ( 3 / "err" / "e" / "error")`
 * Nothing
-	`log.setLevel ( 4 / "nothing" / -1)`
+	* `log.setLevel ( 4 / "nothing" / -1)`
 		
 ## TODO
 
