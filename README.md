@@ -12,7 +12,7 @@ Via [npm][1]:
 
 Calls are forwarded to console.log so everything goes to stdout
 
-    var log = require('carpet');
+    var log = require("carpet");
     
     log.d("debug"); // green timestamps .. equivalent to log.debug()
     log.i("info");	// white timestamps .. equivalent to log.info()
@@ -23,7 +23,7 @@ Calls are forwarded to console.log so everything goes to stdout
     
 Also accepts multiple arguments
 
-		var log = require('carpet');
+		var log = require("carpet");
 		
     log("loook ma' %s formatted output !!!%doneoneeleven", "this is", 1);
 
@@ -32,14 +32,19 @@ Also accepts multiple arguments
 
 Log levels only change color but it might be necessary to limit log output so..
 
-    //TODO: log.setLevel("debug" /../ "error");
+    //TODO: log.setLevel("debug" /../ "error" 0..3);
     //TODO: load log level from environment variable
+    //TODO: buffer log calls before writing to file
 
 ## Credits
 
 Written and maintained by [Mircea Nistor][1].
 
 ## Changelog
+
+0.0.6
+	
+	- added setLogLevel
 
 0.0.5
 

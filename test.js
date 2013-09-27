@@ -19,3 +19,30 @@ log("calling it short");
 log.w("calling a short warning");
 
 
+
+log.setLevel("warn"); //only warnings or errors should now be logged
+log(log.getLevel());
+log.w("this goes");
+log.e("this also goes");
+log("this should not go..if you see this in the output then there's a bug");
+
+log.setLevel(0);	//log everything (default);
+log(log.getLevel());
+
+log("hell yeah");
+log.d("this is visible");
+log.i("this is also visible");
+log.e("amen");
+
+log.setLevel("nothing");
+log("invisible");
+
+//log nothing
+log.setLevel("-1");
+log("invisible");
+
+//log everything
+log.setLevel();
+log.w("no way");
+
+log("");
