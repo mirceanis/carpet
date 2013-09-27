@@ -87,6 +87,10 @@ Written and maintained by [Mircea Nistor][2].
 
 ## Changelog
 
+0.0.7
+
+- bugfix
+
 0.0.6
 	
 - added setLevel, to limit verbosity of output by level of importance
