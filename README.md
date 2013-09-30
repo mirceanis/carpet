@@ -87,6 +87,10 @@ Written and maintained by [Mircea Nistor][2].
 
 ## Changelog
 
+0.0.8
+
+- cleanup
+
 0.0.7
 
 - bugfix
