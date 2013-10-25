@@ -1,5 +1,7 @@
 carpet
 ========
+[![Gittip](http://img.shields.io/gittip/mirceanis.png)](https://www.gittip.com/mirceanis/)
+
 A very simple nodejs logger with colorful timestamps and logging level
 
 ## Installation
@@ -54,10 +56,16 @@ You can do that by calling `log.setLevel()` with the desired minimum logging lev
 	//now set it lower
 	log.setLevel("debug");
 	log("everything is visible now");
-		
-But you don't even have to change your source code to change the log level,
+
+### Even easier
+
+You don't even have to change your source code to change the log level,
 Instead, just set the `CARPET_LOG_LEVEL` environment variable
 to your desired verbosity level before starting your app.
+
+It's as easy as:
+
+	export CARPET_LOG_LEVEL=debug
 
 You can still call `log.setLevel()` afterwards, but you can revert to the environment variable
 by calling `log.setLevel("default")`
