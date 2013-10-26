@@ -18,12 +18,10 @@
   },
   "engines": { "node": ">= 0.8.0" },
   "main" : "lib/carpet.js",
-  "repositories": [
-    {
+  "repository": {
       "type": "mercurial",
       "url": "https://bitbucket.org/mirceanis/carpet"
-    }
-  ],
+  },
   "licenses": [
     {
       "name": "MIT",
