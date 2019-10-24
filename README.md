@@ -1,6 +1,5 @@
 carpet
 ========
-[![Gittip](http://img.shields.io/gittip/mirceanis.png)](https://www.gittip.com/mirceanis/)
 
 A very simple nodejs logger with colorful timestamps and logging level
 
@@ -94,6 +93,10 @@ If that variable is not set, the default default is equivalent to `setLevel("eve
 Written and maintained by [Mircea Nistor][2].
 
 ## Changelog
+
+0.0.9
+
+- adopting git
 
 0.0.8
 

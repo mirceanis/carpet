@@ -1,34 +1,41 @@
 {
   "name": "carpet",
-  "description": "A very simple nodejs logger with colorful timestamps and logging level",
   "version": "0.0.9",
+  "description": "A very simple nodejs logger with colorful timestamps and logging level",
+  "author": "Mircea Nistor <mirceanis@gmail.com>",
   "keywords": [
     "log",
     "logging"
   ],
-  "maintainers": [
-    {
-      "name": "Mircea Nistor",
-      "email": "mirceanis@gmail.com",
-      "web": ""
-    }
-  ],
   "dependencies": {
-    "colors": "*"
+    "colors": "1.4.0"
   },
-  "engines": { "node": ">= 0.8.0" },
-  "main" : "lib/carpet.js",
-  "repositories": [
-    {
-      "type": "mercurial",
-      "url": "https://bitbucket.org/mirceanis/carpet"
-    }
-  ],
-  "licenses": [
-    {
-      "name": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
-  "homepage": "https://bitbucket.org/mirceanis/carpet"
+  "main": "src/carpet.js",
+  "repository": "git@github.com:mirceanis/carpet.git",
+  "license": "MIT",
+  "homepage": "https://github.com/mirceanis/carpet",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "release": "semantic-release --debug",
+    "test-with-coverage": "jest --coverage && codecov",
+    "format": "prettier --write \"src/**/*.js\"",
+    "prepare": "npm run test",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
+    "codecov": "^3.6.1",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.20.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "semantic-release": "^15.13.27"
+  }
 }
