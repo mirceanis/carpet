@@ -3,15 +3,14 @@ require('colors')
 var __slice = [].slice
 var _logLevel = 0
 
-var date = function () {
+var date = function() {
   return new Date().toISOString().replace(/[TZ]/g, ' ')
 }
 
 var helper = {
-
-  log: function () {
+  log: function() {
     if (_logLevel > 0) return
-    var args = (arguments.length >= 1) ? __slice.call(arguments, 0) : []
+    var args = arguments.length >= 1 ? __slice.call(arguments, 0) : []
     var header = date().green
     if (typeof args[0] === 'string') {
       args[0] = header + ' ' + args[0]
@@ -21,9 +20,9 @@ var helper = {
     return console.log.apply(console, args)
   },
 
-  info: function () {
+  info: function() {
     if (_logLevel > 1) return
-    var args = (arguments.length >= 1) ? __slice.call(arguments, 0) : []
+    var args = arguments.length >= 1 ? __slice.call(arguments, 0) : []
     var header = date().white
     if (typeof args[0] === 'string') {
       args[0] = header + ' ' + args[0]
@@ -33,9 +32,9 @@ var helper = {
     return console.log.apply(console, args)
   },
 
-  warn: function () {
+  warn: function() {
     if (_logLevel > 2) return
-    var args = (arguments.length >= 1) ? __slice.call(arguments, 0) : []
+    var args = arguments.length >= 1 ? __slice.call(arguments, 0) : []
     var header = date().yellow
     if (typeof args[0] === 'string') {
       args[0] = header + ' ' + args[0]
@@ -45,9 +44,9 @@ var helper = {
     return console.log.apply(console, args)
   },
 
-  error: function () {
+  error: function() {
     if (_logLevel > 3) return
-    var args = (arguments.length >= 1) ? __slice.call(arguments, 0) : []
+    var args = arguments.length >= 1 ? __slice.call(arguments, 0) : []
     var header = date().red
     if (typeof args[0] === 'string') {
       args[0] = header + ' ' + args[0]
@@ -57,7 +56,7 @@ var helper = {
     return console.log.apply(console, args)
   },
 
-  setLevel: function (lvl) {
+  setLevel: function(lvl) {
     if (typeof lvl === 'undefined') {
       _logLevel = 0
       return
@@ -71,7 +70,7 @@ var helper = {
       case 'default':
       default:
         var defaultLevel = process.env.CARPET_LOG_LEVEL
-        defaultLevel = (typeof defaultLevel === 'string' && defaultLevel.trim() === 'default') ? 0 : defaultLevel
+        defaultLevel = typeof defaultLevel === 'string' && defaultLevel.trim() === 'default' ? 0 : defaultLevel
         this.setLevel(defaultLevel)
         break
 
@@ -116,7 +115,7 @@ var helper = {
         break
     }
   },
-  getLevel: function () {
+  getLevel: function() {
     return _logLevel
   }
 }
@@ -128,7 +127,7 @@ helper.w = helper.warn
 helper.e = helper.error
 helper.err = helper.error
 
-function log () {
+function log() {
   var f = helper.debug
   Object.setPrototypeOf(helper, Object.getPrototypeOf(f))
   Object.setPrototypeOf(f, helper)
