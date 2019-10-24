@@ -1,17 +1,11 @@
 {
   "name": "carpet",
-  "description": "A very simple nodejs logger with colorful timestamps and logging level",
   "version": "0.0.9",
+  "description": "A very simple nodejs logger with colorful timestamps and logging level",
+  "author": "Mircea Nistor <mirceanis@gmail.com>",
   "keywords": [
     "log",
     "logging"
-  ],
-  "maintainers": [
-    {
-      "name": "Mircea Nistor",
-      "email": "mirceanis@gmail.com",
-      "web": ""
-    }
   ],
   "dependencies": {
     "colors": "1.4.0"
@@ -19,5 +13,13 @@
   "main": "src/carpet.js",
   "repository": "git@github.com:mirceanis/carpet.git",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/mirceanis/carpet"
+  "homepage": "https://github.com/mirceanis/carpet",
+  "scripts": {
+    "release": "semantic-release --debug"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
+    "semantic-release": "^15.13.27"
+  }
 }
