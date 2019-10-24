@@ -1,4 +1,4 @@
-var log = require('./lib/carpet');
+var log = require('./src/carpet');
 require('colors');
 
 console.log(log);
