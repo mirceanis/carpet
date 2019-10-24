@@ -133,5 +133,10 @@ Written and maintained by [Mircea Nistor][2].
 
 - Initial release
 
+## notes
+
+This is probably not very useful in these modern times and is being used to test automated 
+semantic-releases.
+
 [1]: http://npmjs.org
 [2]: mailto:mirceanis@gmail.com
